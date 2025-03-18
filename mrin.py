@@ -6,10 +6,10 @@ import threading
 import json
 from telebot.types import ReplyKeyboardMarkup, KeyboardButton
 
-bot = telebot.TeleBot('7775840737:AAFmUfq_O-IctYTJ13ErkiJ-_8XQqiGL-dA')
+bot = telebot.TeleBot('7678896243:AAFqZsvtGegx29HE0Q1ol_hO-fkfxmoOTPI')
 
 # Admin user IDs
-admin_id = ["2007860433"]
+admin_id = ["2007860433", "1008279962"]
 
 # File to store user data (coins, registration date, etc.)
 USER_DATA_FILE = "users_data.json"
@@ -103,7 +103,7 @@ def show_main_buttons(message):
     buy_coins_button = KeyboardButton("💰 Buy Coins")
     markup.add(attack_button, info_button, buy_coins_button)
     
-    bot.send_message(message.chat.id, "🔹 𝗪𝗘𝗟𝗖𝗢𝗠𝗘 𝗧𝗢 𝗠𝗘𝗚𝗢𝗫𝗘𝗥 𝗕𝗢𝗧 🔹", reply_markup=markup)
+    bot.send_message(message.chat.id, "🔹 𝗪𝗘𝗟𝗖𝗢𝗠𝗘 𝗧𝗢 𝗥𝗝𝘅𝗣𝗿𝗲𝗺𝗶𝘂𝗺™ 𝗗𝗱𝗼𝘀 𝗕𝗢𝗧 🔹", reply_markup=markup)
 
 # Handler for /start command
 @bot.message_handler(commands=['start'])
